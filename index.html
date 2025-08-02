@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="button-creator">
+    <form id="controles">
+      <label for="texto">text</label>
+      <input type="text" id="texto" name="texto">
+      <label for="color">color</label>
+      <input type="color" id="color" name="color">
+      <label for="backgroundColor">background-color</label>
+      <input type="color" id="backgroundColor" name="backgroundColor">
+      <label for="width">width</label>
+      <input type="range" id="width" name="width" min="0" max="600"">
+      <label for=" height">height</label>
+      <input type="range" id="height" name="height" min="0" max="600">
+      <label for="border">border</label>
+      <input type="text" id="border" name="border">
+      <label for="padding">padding</label>
+      <input type="number" id="padding" name="padding">
+      <label for="borderRadius">border-radius</label>
+      <input type="range" id="borderRadius" name="borderRadius" min="0" max="100">
+      <label for="fontFamily">font-family</label>
+      <select id="fontFamily" name="fontFamily">
+        <option value="Arial">Arial</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Helvetica">Helvetica</option>
+        <option value="Comic Sans MS">Comic Sans MS</option>
+        <option value="courier new">courier new</option>
+        <option value="impact">impact</option>
+        <option value="sansSerif">sans-serif</option>
+        <option value="IBM Plex Mono">IBM Plex Mono</option>
+        <option value="monospace">monospace</option>
+        <option value="cursive">cursive</option>
+        <option value="fantasy">fantasy</option>
+      </select>
+      <label for="fontSize">font-size</label>
+      <input type="number" id="fontSize" name="fontSize" min="0" max="10">
+    </form>
+
+    <section class="resultado">
+      <button class="btn" id="btn">Clique</button>
+      <pre><code class="css"></code></pre>
+    </section>
+  </section>
+  <script src="script.js"> </script>
+</body>
+
+</html>
